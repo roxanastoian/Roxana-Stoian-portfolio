@@ -105,6 +105,10 @@ nav li.active a {
   color: var(--main-color);
 }
 
+nav {
+  border-bottom: 5px solid black;
+}
+
 .btn-branding {
   font-size: 22px;
   margin-top: 55px;
@@ -145,8 +149,47 @@ nav li.active a {
   display: block;
   text-align: center;
   width: 50%;
-
+  margin-left: 30px;
   padding: 20px 30px 20px 30px;
+}
+
+.work-page h1 {
+  text-align: center;
+}
+
+.work-page img {
+  display: block;
+  margin: 0 auto;
+  width: 570px;
+  height: 500px;
+  object-fit: fill;
+  box-shadow: 14px -13px 2px rgba(0, 0, 0, 0.9);
+}
+
+.work-page .background-img-color:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.background-img-color {
+  background-color: #fbfaf9;
+  border: 5px solid black;
+  padding: 40px;
+  margin: 30px 10px;
+}
+
+.work-page p {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+
+
+.skills {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 @media (max-width: 1100px) {
@@ -184,6 +227,7 @@ nav li.active a {
     display: block;
     margin: 0 auto;
     box-shadow: -1px -4px 23px 15px rgba(0, 0, 0, 0.2);
+    max-width: 70%;
   }
 
   .about-page h1 {
@@ -194,7 +238,7 @@ nav li.active a {
   .about-page p {
     text-align: center;
     line-height: 37px;
-    font-size: 17px;
+    font-size: 19px;
     opacity: 0.9;
   }
 
