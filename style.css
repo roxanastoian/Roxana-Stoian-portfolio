@@ -40,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Abril Fatface", cursive;
+  font-family: var(--heading-font-family);
 }
 
 .container-fluid {
@@ -121,12 +121,14 @@ nav {
 }
 
 .btn-branding:hover {
-  color: #fbfaf9;
-  border: 2px solid #fbfaf9;
+  color: black;
+  background-color: white;
+  border: 5px solid black;
   transform: scale(1.1, 1.1);
 }
 
 .about-page img {
+  border: 5px solid black;
   border-radius: 400px 200px 75px 150px;
   box-shadow: -1px -4px 23px 15px rgba(0, 0, 0, 0.2);
   margin-top: 40px;
@@ -191,6 +193,49 @@ nav {
   text-align: center;
   font-size: 20px;
   font-weight: bolder;
+}
+
+.work-page-footer {
+  font-size: 40px;
+  max-width: 100%;
+  background-color: #fbfaf9;
+  border-top: 5px solid black;
+  padding: 20px 0 20px;
+}
+
+.contact-page .social-accounts {
+  text-align: center;
+  list-style-type: none;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: var(--default-font-family);
+}
+
+.contact-page .contact-links {
+  display: block;
+  max-width: 40%;
+  margin: 25px auto;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: var(--default-font-family);
+  color: var(--tertiary-color);
+  transition: all 150ms ease-in-out;
+}
+
+.contact-page .contact-links:hover {
+  color: var(--main-color);
+  font-size: 25px;
+}
+
+.social-accounts-background {
+  background-color: #fbfaf9;
+  border: 5px solid black;
+  padding: 10px 15px;
+}
+
+.center {
+  text-align: center;
 }
 
 @media (max-width: 1100px) {
@@ -269,6 +314,18 @@ nav {
     border: 5px solid black;
     padding: 25px;
     margin: 15px 15px;
+  }
+
+  .contact-page h1 {
+    font-size: 55px;
+  }
+
+  .contact-page .contact-links {
+    max-width: 90%;
+    font-size: 17px;
+  }
+  .contact-page ul {
+    padding: 0;
   }
 }
 
