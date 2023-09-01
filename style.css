@@ -299,8 +299,8 @@ footer .contact-box a {
   }
 
   li a {
-    font-size: 15px;
-    padding-left: 2px;
+    font-size: 13px;
+    padding-left: 3px;
   }
 
   .about-page img {
@@ -321,6 +321,7 @@ footer .contact-box a {
     line-height: 37px;
     font-size: 19px;
     opacity: 0.9;
+    padding: 0;
   }
 
   .about-page .btn-branding {
