@@ -198,9 +198,22 @@ nav {
 .work-page-footer {
   font-size: 40px;
   max-width: 100%;
-  background-color: #fbfaf9;
+  background-color: white;
   border-top: 5px solid black;
   padding: 20px 0 20px;
+}
+
+.work-page .social-links a {
+  font-size: 50px;
+  margin: 58px 35px 10px;
+  color: black;
+  padding: 5px 10px;
+  transition: all 200ms ease;
+}
+
+.work-page .social-links a:hover {
+  color: white;
+  transform: scale(1.1, 1.1);
 }
 
 .contact-page .social-accounts {
@@ -236,6 +249,23 @@ nav {
 
 .center {
   text-align: center;
+}
+
+footer .contact-box {
+  background-color: white;
+  padding: 30px 120px;
+  border: 5px solid black;
+}
+
+footer .contact-box h4 {
+  font-size: 35px;
+}
+
+footer .contact-box a {
+  color: white;
+  background: linear-gradient(-90deg, #407088, #fe8f8f, #09c6c7);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
 }
 
 @media (max-width: 1100px) {
@@ -326,6 +356,11 @@ nav {
   }
   .contact-page ul {
     padding: 0;
+  }
+
+  .work-page-footer {
+    font-size: 30px;
+    max-width: 100%;
   }
 }
 
